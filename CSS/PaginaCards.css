@@ -1,0 +1,23 @@
+body {
+    margin: 0px;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 40px 20px;
+    
+}
+
+h1{
+    text-align: center;
+    
+    
+}
+
+p {
+    font-size: 15px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}

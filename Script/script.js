@@ -58,3 +58,4 @@ prevButton.addEventListener('click', resetTimer);
 window.addEventListener('resize', () => {
   moveCarousel(0);
 });
+

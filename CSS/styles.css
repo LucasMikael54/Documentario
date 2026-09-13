@@ -5,41 +5,42 @@
 }
 
 body {
-  background-color: #FFFDF5; /* Fundo escuro igual ao site */
+  background-color: #FFFDF5;
+  /* Fundo escuro igual ao site */
   font-family: 'Arial', sans-serif;
-} 
+}
 
 /* Container "Pai" */
-.container{
-    background-color: #FFFDF5;
+.container {
+  background-color: #FFFDF5;
 }
 
 /* Cabeçalho do site */
-.cabecalho{
-    background-color: #0B1048;
-    height: 40px;
-    display: flex;
+.cabecalho {
+  background-color: #0B1048;
+  height: 40px;
+  display: flex;
 }
 
 /* Link do site */
 
-.link-principal{
-    text-align: center;
-    color: #FFFDF5;
-    text-decoration: none;
-    font-family: Arial, sans-serif;
-    margin: 60px;
+.link-principal {
+  text-align: center;
+  color: #FFFDF5;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  margin: 60px;
 }
 
 /* Logo */
 
-.foto-logo{
-    margin: 10px
+.foto-logo {
+  margin: 10px
 }
 
 /* Section / container do carrossel*/
 
-.carrossel{
+.carrossel {
   background-color: aqua;
   margin-top: 20px;
 }
@@ -63,13 +64,15 @@ body {
 /* Linha que move os cards */
 .carousel-track {
   display: flex;
-  gap: 20px; /* Espaço entre os cards */
+  gap: 20px;
+  /* Espaço entre os cards */
   transition: transform 0.5s ease-in-out;
 }
 
 /* Configuração de cada Card individual */
 .carousel-card {
-  min-width: calc((100% - 40px) / 3); /* Mostra exatamente 3 cards na tela */
+  min-width: calc((100% - 40px) / 3);
+  /* Mostra exatamente 3 cards na tela */
   height: 400px;
   background-size: cover;
   background-position: center;
@@ -119,7 +122,7 @@ body {
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   font-size: 18px;
   width: 40px;
   height: 40px;
@@ -136,13 +139,35 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.prev-btn { left: -10px; }
-.next-btn { right: -10px; }
+.prev-btn {
+  left: -10px;
+}
+
+.next-btn {
+  right: -10px;
+}
 
 /* Responsividade: exibe menos cards em telas menores */
 @media (max-width: 900px) {
-  .carousel-card { min-width: calc((100% - 20px) / 2); } /* 2 cards */
+  .carousel-card {
+    min-width: calc((100% - 20px) / 2);
+  }
+
+  /* 2 cards */
 }
+
 @media (max-width: 600px) {
-  .carousel-card { min-width: 100%; } /* 1 card */
+  .carousel-card {
+    min-width: 100%;
+  }
+
+  /* 1 card */
 }
+
+.card1 {
+  text-decoration: none;
+  color: white;
+
+
+}
+
