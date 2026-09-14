@@ -2,47 +2,70 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 body {
-  background-color: #FFFDF5;
-  /* Fundo escuro igual ao site */
+  background-color: #FFFDF5; 
   font-family: 'Arial', sans-serif;
-}
+} 
 
 /* Container "Pai" */
-.container {
-  background-color: #FFFDF5;
+.container{
+    background-color: #FFFDF5;
 }
 
 /* Cabeçalho do site */
-.cabecalho {
-  background-color: #0B1048;
-  height: 40px;
-  display: flex;
+.cabecalho{
+    background-color: #0B1048;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 10px 60px;
+    width: 100%;
+   
 }
 
-/* Link do site */
+/* Link da Logo */
 
-.link-principal {
-  text-align: center;
-  color: #FFFDF5;
-  text-decoration: none;
-  font-family: Arial, sans-serif;
-  margin: 60px;
+.link-logo{
+  display: flex;
+  align-items: center;
+  right: 40px;
 }
 
 /* Logo */
 
-.foto-logo {
-  margin: 10px
+.foto-logo{
+  height: 40px;
+  display: block;
 }
 
-/* Section / container do carrossel*/
+/* Menu dos links */
 
-.carrossel {
-  background-color: aqua;
-  margin-top: 20px;
+.prin {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: none !important;
+  width: auto !important; 
+}
+
+/* Link do site */
+
+.link-principal{
+  
+  color: #FFFDF5;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 !important;
+}
+
+.prin a{
+  margin-left: 15px;
+  text-decoration: none;
 }
 
 /* Contêiner principal que segura todo o carrossel */
@@ -64,15 +87,13 @@ body {
 /* Linha que move os cards */
 .carousel-track {
   display: flex;
-  gap: 20px;
-  /* Espaço entre os cards */
+  gap: 20px; /* Espaço entre os cards */
   transition: transform 0.5s ease-in-out;
 }
 
 /* Configuração de cada Card individual */
 .carousel-card {
-  min-width: calc((100% - 40px) / 3);
-  /* Mostra exatamente 3 cards na tela */
+  min-width: calc((100% - 40px) / 3); /* Mostra exatamente 3 cards na tela */
   height: 400px;
   background-size: cover;
   background-position: center;
@@ -113,6 +134,14 @@ body {
 .card-title {
   font-size: 1.4rem;
   font-weight: bold;
+  color: #FFFDF5;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+}
+
+.card1{
+  text-decoration: none;
 }
 
 /* Botões flutuantes de navegação lateral */
@@ -122,7 +151,7 @@ body {
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255,255,255,0.1);
   font-size: 18px;
   width: 40px;
   height: 40px;
@@ -139,35 +168,14 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.prev-btn {
-  left: -10px;
-}
-
-.next-btn {
-  right: -10px;
-}
+.prev-btn { left: -10px; }
+.next-btn { right: -10px; }
 
 /* Responsividade: exibe menos cards em telas menores */
 @media (max-width: 900px) {
-  .carousel-card {
-    min-width: calc((100% - 20px) / 2);
-  }
-
-  /* 2 cards */
+  .carousel-card { min-width: calc((100% - 20px) / 2); } /* 2 cards */
 }
-
 @media (max-width: 600px) {
-  .carousel-card {
-    min-width: 100%;
-  }
-
-  /* 1 card */
-}
-
-.card1 {
-  text-decoration: none;
-  color: white;
-
-
+  .carousel-card { min-width: 100%; } /* 1 card */
 }
 
