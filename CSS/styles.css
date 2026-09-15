@@ -19,6 +19,9 @@ body {
     padding: 10px 60px;
     width: 100%;
     margin-bottom: 20px;
+    position: fixed;/*faz o cabesalho fica preso na tela quando o site rola*/
+    /*top: 0;/*deixa grudado no topo*/
+    z-index: 1000;
 
 }
 
@@ -72,6 +75,8 @@ body {
   max-width: 1200px;
   margin: auto; 
   padding: 0 40px;
+  padding-top: 100px;
+ 
 } 
 
 /* Janela que esconde os cards que passam do limite */
