@@ -2,18 +2,13 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
 }
 
 body {
   background-color: #FFFDF5; 
   font-family: 'Arial', sans-serif;
-} 
 
-/* Container "Pai" */
-.container{
-    background-color: #FFFDF5;
-}
+} 
 
 /* Cabeçalho do site */
 .cabecalho{
@@ -23,7 +18,8 @@ body {
     justify-content: center; 
     padding: 10px 60px;
     width: 100%;
-   
+    margin-bottom: 20px;
+
 }
 
 /* Link da Logo */
@@ -49,6 +45,7 @@ body {
   gap: 40px;
   background: none !important;
   width: auto !important; 
+ 
 }
 
 /* Link do site */
@@ -69,13 +66,13 @@ body {
 }
 
 /* Contêiner principal que segura todo o carrossel */
-.carousel-container {
+ .carousel-container {
   position: relative;
   width: 100%;
   max-width: 1200px;
-  margin: 50px auto;
+  margin: auto; 
   padding: 0 40px;
-}
+} 
 
 /* Janela que esconde os cards que passam do limite */
 .carousel-window {
