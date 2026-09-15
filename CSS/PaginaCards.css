@@ -1,15 +1,15 @@
-/* zoo no plano de fundo */
+/* zoo no plano de fundo 
 
-* {box-sizing:border-box}
+ *{box-sizing:border-box}
 body, html {padding:0; margin:0} 
 body {background:#232323; color:#fff}
 .opaque {position:absolute; top:0; left:0; right:0; bottom:0; opacity:0; background:#d2d6f1;}
 .lt-ie9 .opaque {display:none;}
-.feature {position:fixed; z-index:0; width:100%; padding-top:50%; background: url(../Imagens/IMG_6094.JPG) center center no-repeat;
+.feature  {position:fixed; z-index:0; width:100%; padding-top: 50%;/* background:  url(../Imagens/IMG_6094.JPG) center center no-repeat;
     -webkit-background-size:100%;
        -moz-background-size:100%;
          -o-background-size:100%;
-            background-size:100%;
+            background-size: 100%;
     -webkit-box-shadow: 0 -50px 20px -20px #232323 inset;
        -moz-box-shadow: 0 -50px 20px -20px #232323 inset;
             box-shadow: 0 -50px 20px -20px #232323 inset;
@@ -19,3 +19,26 @@ body {background:#232323; color:#fff}
 @media only screen and (min-width:36.250em) {
   .content {width:60%; padding-top:35% }
 }
+
+.feature{
+      position:fixed; z-index:0; width:100%; padding-top: 50%;/* background:  url(../Imagens/IMG_6097.JPG) center center no-repeat;
+     -webkit-background-size:100%;
+      -moz-background-size:100%;
+      -o-background-size:100%;
+      background-size:100%;
+      -webkit-box-shadow: 0 -50px 20px -20px #232323 inset;
+      -moz-box-shadow: 0 -50px 20px -20px #232323 inset;
+       box-shadow: 0 -50px 20px -20px #232323 inset;
+       
+
+}*/
+
+.fundo{
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
