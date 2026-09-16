@@ -1,0 +1,124 @@
+/* VÍDEO DO DOCUMENTÁRIO */
+.video-documentario {
+    width: 100%;
+    padding: 80px 30px;
+    background-color: #FFFDF5;
+}
+
+.video-conteudo {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.video-conteudo h2 {
+    color: #0B1048;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.video-conteudo>p {
+    color: #292929;
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.video-box {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.video-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #0B1048;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-placeholder span {
+    color: #FFFDF5;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* FOOTER*/
+.rodape {
+    width: 100%;
+    background-color: #0B1048;
+    color: #FFFDF5;
+}
+
+.rodape-conteudo {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 30px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.rodape-conteudo h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.rodape-logo,
+.rodape-info,
+.rodape-links {
+    flex: 1;
+}
+
+.rodape-logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.rodape-logo p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.rodape-info p {
+    max-width: 350px;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.rodape-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.rodape-links a {
+    color: #FFFDF5;
+    text-decoration: none;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.rodape-links a:hover {
+    text-decoration: underline;
+}
+
+.rodape-final {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+    padding: 20px;
+}
+
+.rodape-final p {
+    font-size: 13px;
+}
+

@@ -1,44 +1,122 @@
- zoo no plano de fundo 
-
- /* *{box-sizing:border-box}
-body, html {padding:0; margin:0} 
-body {background:#232323; color:#fff}
-.opaque {position:absolute; top:0; left:0; right:0; bottom:0; opacity:0; background:#d2d6f1;}
-.lt-ie9 .opaque {display:none;}
-.feature  {position:fixed; z-index:0; width:100%; padding-top: 50%; background:  url(../Imagens/IMG_6094.JPG) center center no-repeat;
-    -webkit-background-size:100%;
-       -moz-background-size:100%;
-         -o-background-size:100%;
-            background-size: 100%;
-    -webkit-box-shadow: 0 -50px 20px -20px #232323 inset;
-       -moz-box-shadow: 0 -50px 20px -20px #232323 inset;
-            box-shadow: 0 -50px 20px -20px #232323 inset;
-  }
-.content {position:relative; z-index:1; padding-top:45%; width:90%; margin:0 auto;}
-
-@media only screen and (min-width:36.250em) {
-  .content {width:60%; padding-top:35% }
+main {
+  padding-top: 60px;
 }
 
-.feature{
-      position:fixed; z-index:0; width:100%; padding-top: 50%; background:  url(../Imagens/IMG_6097.JPG) center center no-repeat;
-     -webkit-background-size:100%;
-      -moz-background-size:100%;
-      -o-background-size:100%;
-      background-size:100%;
-      -webkit-box-shadow: 0 -50px 20px -20px #232323 inset;
-      -moz-box-shadow: 0 -50px 20px -20px #232323 inset;
-       box-shadow: 0 -50px 20px -20px #232323 inset;
-       
-
-} */
-
-.fundo{
+/* Área principal do conteúdo */
+.feature {
   width: 100%;
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 30px;
 }
 
+/* Conteúdo dos textos */
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+}
 
+/* Título principal */
+.content h2 {
+  font-size: 36px;
+  color: #0B1048;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Subtítulo */
+.content h3 {
+  font-size: 22px;
+  color: #3d6fb9;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Parágrafos */
+.content p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #222;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+/* Destaque */
+.content strong {
+  color: #0B1048;
+}
+
+/* Capa da página */
+
+.capa {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.capa img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Transição entre a capa e o conteúdo */
+
+.feature {
+  position: relative;
+  background-color: #FFFDF5;
+  padding-top: 60px;
+}
+
+/* Onda entre a capa e o texto */
+
+.capa {
+  position: relative;
+
+}
+
+.capa::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: #FFFDF5;
+  clip-path: ellipse(60% 70% at 50% 100%);
+}
+
+/* Organização do texto */
+
+.bloco-texto {
+  margin-bottom: 45px;
+}
+
+.bloco-texto h4 {
+  color: #3d6fb9;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.bloco-texto p {
+  margin-bottom: 0;
+}
+
+/* Frase de destaque */
+
+.destaque-texto {
+  margin-top: 50px;
+  padding: 25px 30px;
+  border-left: 4px solid #3d6fb9;
+  background-color: rgba(61, 111, 185, 0.08);
+}
+
+.destaque-texto p {
+  margin: 0;
+}
+
+body {
+  background-color: #0B1048;
+}
