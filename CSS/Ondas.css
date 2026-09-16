@@ -1,0 +1,87 @@
+css* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden; /* Isso proíbe o surgimento da barra de rolagem para os lados */
+  background-color: #173080; 
+  font-family: 'Arial', sans-serif;
+}
+
+/* --- NOVA SEÇÃO DO TOPO (Garante o fundo azul escuro do site) --- */
+.topo-site {
+  position: relative;
+  width: 100%;
+  background-color: #0B1048 !important; /* Cor azul escura idêntica ao seu menu */
+  padding-bottom: 120px;     /* Espaço inferior para as ondas passarem */
+  overflow: hidden;         /* Esconde o excesso das ondas para não gerar barra de rolagem */
+}
+
+/* --- NOVO EFEITO DE ONDAS COM CSS PURO (Sem arquivos ou SVG bloqueados) --- */
+.ocean {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Estilo base da curva */
+.wave {
+  position: absolute;
+  bottom: -50px; /* Esconde a base quadrada da div */
+  left: 50%;
+  width: 200vw;  /* Ganha o dobro do tamanho da tela para poder girar sem cortar */
+  height: 200vw;
+  margin-left: -100vw;
+  border-radius: 43%; /* Esse valor quebrado cria o formato ondulado perfeito ao girar */
+}
+
+/* Onda da Frente - Usa a cor bege exata do seu body de baixo (#FFFDF5) */
+.wave1 {
+  background-color: #3d6fb9;
+  z-index: 3;
+  animation: girar-onda 15s linear infinite;
+}
+
+/* Onda de Trás - Transparente/Clara para criar o efeito de profundidade marinha */
+.wave2 {
+  background-color: rgba(92, 153, 223, 0.473);
+  z-index: 2;
+  bottom: -40px; /* Um pouco mais alta que a primeira */
+  border-radius: 40%;
+  animation: girar-onda 11s linear infinite reverse; /* Gira ao contrário */
+}
+
+/* Animação que cria o efeito de oscilação do mar */
+@keyframes girar-onda {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* --- AJUSTES DE EMPILHAMENTO DO CARROSSEL --- */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto; 
+  padding: 0 40px;
+  padding-top: 100px;
+  z-index: 5; /* Fica acima das ondas */
+} 
+
+.carousel-window {
+  overflow: hidden;
+  width: 100%;
+  border-radius: 12px;
+  position: relative;
+  z-index: 5;
+  background: transparent !important; 
+}
+
