@@ -9,4 +9,7 @@
 
 .caixa-text{
     margin: 100px 500px;
+    border: none; /* Remove o estilo padrão da linha */
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ffffff;
 }
